@@ -13,8 +13,6 @@ Gris: #EEEDF3
 	src: url('./fonts/Browser.ttf')
 }
 
-
-
 * {
 	margin: 0.2rem;
 	padding: 0;
@@ -91,17 +89,8 @@ a {
 	display: flex;
 }
 
-.caja1 {
-	margin: 1em;
-	width: 50%;
-}
-
-.caja2 {
-	background-color: yellow;
-	width: 50%;
-}
-
 h2{
+	margin: 0.5em;
 	font-family: Browser;
 	font-weight: lighter;
 	color: #1D2C78;
@@ -124,28 +113,61 @@ h3{
 
 }
 
-.caja1 p{
-	overflow-wrap: break-word;
-	font-family: Quattrocento;
-	font-size: 1.3rem;
-	line-height: 2rem;
-	text-align: justify;
-	margin: 1rem;
-	font-weight: 300;
+.contenedor {
+	border: 4px solid red;
+	display: flex;
+	height: 100%;
+	flex-wrap: wrap;
+	gap: 10px 30px;
+	justify-content: center;
 }
 
-.caja2 img{
-	width: 25%;
-	border: 4px solid darkred;
+.producto{
+	height: 20rem;
+	width: 20rem;
+	background: white;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
+
+.producto img{
+	display: block;
+	width: 4rem;
+
+}
+
+.producto h4{
+	margin-bottom: 1rem;
+	font-size: 1.8em;
+	font-weight: bolder;
+	color: #1D2C78;
+}
+
+.producto h5{
+	margin-bottom: 1rem;
+	font-size: 1.8em;
+	font-weight: bolder;
+	color: #1D2C78;
+	text-align: center;
+}
+
+.producto p{
+	font-style: italic;
+	font-size: 1em;
+}
+
+
 
 
 @media (max-width: 800px) {
-	.navbar{
+	navbar {
 		flex-direction: column;
 		align-items: flex-start;
 	}
-}
+
 
 @media (min-width: 500px) and (max-width: 800px) {
 	ul{
