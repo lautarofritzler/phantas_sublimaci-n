@@ -13,8 +13,6 @@ Gris: #EEEDF3
 	src: url('./fonts/Browser.ttf')
 }
 
-
-
 * {
 	margin: 0.2rem;
 	padding: 0;
@@ -85,13 +83,6 @@ a {
 	text-decoration: none;
 }
 
-.contenedor {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-
 h2{
 	margin: 0.4em;
 	font-family: Browser;
@@ -100,53 +91,103 @@ h2{
 	font-size: 3rem;
 }
 
-i {
-	font-size: 8rem;
-	color:#1D2C78 ;
-}
-
-.sec1{
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.sec2{
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.sec2 img{
-	width: 10rem;
-}
-
-.sec1 p{
+.intro {
 	font-size: 1.4rem;
-	text-align: center;
-	margin: 1rem;
+	margin-left: 1.2rem;
 }
 
-.redes{
+.contenedor {
 	display: flex;
+	height: auto;
+	flex-wrap: wrap;
+	gap: 10px 30px;
+	justify-content: center;
 	flex-direction: column;
 }
 
-.logoredes{
+.proceso{
+	width: 99%;
+	background: white;
+	border-radius: 20px;
 	display: flex;
-	gap: 4rem;
+	align-items: center;
+	justify-content: space-between;
+	border: 4px solid #4F7ED0;
+	margin: 1.2rem
 }
+
+.descripcion{
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+}
+
+.descripcion h4{
+	color: #1D2C78;
+	font-size: 1.7rem;
+	margin: 0.5rem;
+}
+
+.descripcion p{
+	font-size: 1.4rem;
+	text-align: justify;
+	margin: 0.5rem
+}
+
+.imagenpaso{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagenpaso img {
+	display: block;
+	width: 10em;
+}
+
+#envioimg{
+	display: block;
+	width: 6em;
+}
+
+
+#formatoimg {
+	display: block;
+	width: 3.5em;
+}
+
+.producto h4{
+	margin: 0.5rem;
+	font-size: 1.8em;
+	font-weight: bolder;
+	color: #1D2C78;
+}
+
+.producto h5{
+	margin-bottom: 1rem;
+	font-size: 1.8em;
+	font-weight: bolder;
+	color: #1D2C78;
+	text-align: center;
+}
+
+.producto p{
+	font-style: italic;
+	font-size: 1em;
+	text-align: center;
+	margin: 0.5rem;
+}
+
+
 
 
 @media (max-width: 800px) {
-	.navbar{
+	navbar {
 		flex-direction: column;
 		align-items: flex-start;
 	}
-}
+
 
 @media (min-width: 500px) and (max-width: 800px) {
 	ul{

@@ -75,7 +75,6 @@ ul li{
 	margin: 0.5rem;
 	border-radius: 1rem 1rem 1rem 1rem;
 	text-decoration: none;
-	transition: all 0.5s linear 0.5s;
 }
 
 a {
@@ -90,22 +89,6 @@ h2{
 	font-weight: lighter;
 	color: #1D2C78;
 	font-size: 3rem;
-}
-
-h3{
-	font-family: 'Abel', sans-serif;
-	font-weight: bold;
-	font-size: 2rem;
-	width: 40%;
-	margin: auto;
-	text-align: center;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	margin-top: 2rem;
-	border-radius: 1rem 1rem 1rem 1rem;
-	border-color: black;
-	border: 0.15rem solid #4F7ED0;
-
 }
 
 .contenedor {
@@ -159,9 +142,6 @@ h3{
 	text-align: center;
 	margin: 0.5rem;
 }
-
-
-
 
 @media (max-width: 800px) {
 	navbar {
